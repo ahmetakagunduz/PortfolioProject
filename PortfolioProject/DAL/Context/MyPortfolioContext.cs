@@ -8,7 +8,7 @@ namespace PortfolioProject.DAL.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-SCD3NG6;Database=MyPortfolioDb;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-SCD3NG6;Database=MyPortfolioDb;Trusted_Connection=True;;TrustServerCertificate=true");
         }
         public DbSet<About>  Abouts { get; set; }   
         public DbSet<Contact>  Contacts { get; set; }   
@@ -16,7 +16,7 @@ namespace PortfolioProject.DAL.Context
         public DbSet<Feature> Features { get; set; }   
         public DbSet<Message>  Messages { get; set; }   
         public DbSet<Portfolio> Portfolios { get; set; }   
-        public DbSet<Skills>  Skillss { get; set; }   
+        public DbSet<Skill>  Skills { get; set; }   
         public DbSet<SocialMedia> SocialMedias { get; set; }   
         public DbSet<Testimonial> Testimonials { get; set; }   
     }
