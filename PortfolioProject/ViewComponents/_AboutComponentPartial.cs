@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace PortfolioProject.WiewComponents
+namespace PortfolioProject.ViewComponents
 {
-    public class _NavbarComponentPartial:ViewComponent
+    public class _AboutComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

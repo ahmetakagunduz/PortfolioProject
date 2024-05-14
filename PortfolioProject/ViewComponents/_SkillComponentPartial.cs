@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace PortfolioProject.WiewComponents
+namespace PortfolioProject.ViewComponents
 {
-    public class _FeatureComponentPartial:ViewComponent
+    public class _SkillComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {
